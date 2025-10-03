@@ -9,6 +9,7 @@ gs4_auth(token = googledrive::drive_token())
 
 # PARAMETROS
 # Hojas existentes en el documento
+ss <- "1F-3U7zg3G5tKvBCDxS3feUmUVhuPUryrItHsAlxROak"
 tabs <- sheet_properties(ss)
 
 # Nombre de la hoja a buscar/crear
