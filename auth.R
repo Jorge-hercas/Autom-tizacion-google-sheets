@@ -3,6 +3,15 @@ library(dplyr)
 library(lubridate)
 library(googlesheets4)
 
+# API KEY
+av_api_key("QRD9JEXDGCDJYRRM")
+
+# PETICIÓN
+data <- av_get(symbol = "GOOG", 
+               av_fun = "TIME_SERIES_DAILY", 
+               outputsize = "full", 
+               interval = "60min")
+
 # AUTENTICACIÓN
 googledrive::drive_auth(path = "key.json")
 gs4_auth(token = googledrive::drive_token())
